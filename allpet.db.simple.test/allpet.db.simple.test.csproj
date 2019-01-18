@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="native\librocksdb-5.17.0.so" />
+    <None Remove="native\libsnappy.so.1.1.5" />
+    <None Remove="native\rocksdb-5.17.0.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="native\librocksdb-5.17.0.so">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="native\libsnappy.so.1.1.5">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="native\rocksdb-5.17.0.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="allpet.db.simple" Version="1.0.1" />
+  </ItemGroup>
+
+</Project>

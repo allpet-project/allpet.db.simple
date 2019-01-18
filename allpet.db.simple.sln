@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "allpet.db.simple", "allpet.db.simple\allpet.db.simple.csproj", "{657E5DAB-8494-48BE-89AC-CD5EA2F93346}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "allpet.db.simple", "allpet.db.simple\allpet.db.simple.csproj", "{657E5DAB-8494-48BE-89AC-CD5EA2F93346}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "allpet.db.simple.test", "allpet.db.simple.test\allpet.db.simple.test.csproj", "{CC4D40E5-DA53-4D1A-899E-BD6D241548EF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{657E5DAB-8494-48BE-89AC-CD5EA2F93346}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{657E5DAB-8494-48BE-89AC-CD5EA2F93346}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{657E5DAB-8494-48BE-89AC-CD5EA2F93346}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC4D40E5-DA53-4D1A-899E-BD6D241548EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC4D40E5-DA53-4D1A-899E-BD6D241548EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC4D40E5-DA53-4D1A-899E-BD6D241548EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC4D40E5-DA53-4D1A-899E-BD6D241548EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
