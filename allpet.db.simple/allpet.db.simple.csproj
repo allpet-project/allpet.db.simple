@@ -4,7 +4,9 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>allpet</Authors>
-    <Version>1.0.0-beta</Version>
+    <Version>1.0.2</Version>
+    <PackageId>allpet.db.simple</PackageId>
+    <PackageProjectUrl>https://github.com/allpet-project/allpet.db.simple</PackageProjectUrl>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -23,18 +25,21 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="native\librocksdb-5.17.0.so">
+    <Content Include="native\librocksdb-5.17.0.so" copyToOutput="true">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  <Pack>true</Pack>
+	  <copyToOutput>true</copyToOutput>
     </Content>
-    <Content Include="native\libsnappy.so.1.1.5">
+    <Content Include="native\libsnappy.so.1.1.5" copyToOutput="true">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  <Pack>true</Pack>
+	  <copyToOutput>true</copyToOutput>
     </Content>
-    <EmbeddedResource Include="native\rocksdb-5.17.0.dll">
+    <Content Include="native\rocksdb-5.17.0.dll" copyToOutput="true">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  <Pack>true</Pack>
-    </EmbeddedResource>
+	  <copyToOutput>true</copyToOutput>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="allpet.db.struct.lib" Version="1.0.3" />

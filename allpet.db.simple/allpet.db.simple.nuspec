@@ -1,29 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
-    <id>allpet.db.simple.test</id>
-    <version>1.0.6-beta</version>
+    <id>allpet.db.simple</id>
+    <version>1.0.2</version>
     <authors>allpet</authors>
     <owners>allpet</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectUrl>https://github.com/allpet-project/allpet.db.simple</projectUrl>
-    <description>allpet.db.simple.test</description>
+    <description>Package Description</description>
     <dependencies>
       <group targetFramework=".NETStandard2.0">
+        <dependency id="Newtonsoft.Json" version="12.0.1" exclude="Build,Analyzers" />
         <dependency id="System.Reflection.Emit" version="4.3.0" exclude="Build,Analyzers" />
         <dependency id="allpet.db.struct.lib" version="1.0.3" exclude="Build,Analyzers" />
-        <dependency id="Newtonsoft.Json" version="12.0.1" exclude="Build,Analyzers" />
       </group>
     </dependencies>
     <contentFiles>
-      <files include="netstandard2.0/native/librocksdb-5.17.0.so" buildAction="Content" copyToOutput="true"/>
-      <files include="netstandard2.0/native/libsnappy.so.1.1.5" buildAction="Content" copyToOutput="true"/>
-      <files include="netstandard2.0/native/rocksdb-5.17.0.dll" buildAction="Content" copyToOutput="true"/>
-    </contentFiles>    
+      <files include="any/netstandard2.0/native/librocksdb-5.17.0.so" buildAction="Content" copyToOutput="true"/>
+      <files include="any/netstandard2.0/native/libsnappy.so.1.1.5" buildAction="Content" copyToOutput="true"/>
+      <files include="any/netstandard2.0/native/rocksdb-5.17.0.dll" buildAction="Content" copyToOutput="true"/>
+    </contentFiles>
   </metadata>
-  <files>
-     <file src="D:\gxq\NEO\SRC\AllPet\allpet.db.simple\allpet.db.simple\allpet.db.simple\bin\Release\netstandard2.0\native\librocksdb-5.17.0.so" target="lib\native" />
-	 <file src="D:\gxq\NEO\SRC\AllPet\allpet.db.simple\allpet.db.simple\allpet.db.simple\bin\Release\netstandard2.0\native\libsnappy.so.1.1.5" target="lib\native" />
-	 <file src="D:\gxq\NEO\SRC\AllPet\allpet.db.simple\allpet.db.simple\allpet.db.simple\bin\Release\netstandard2.0\native\rocksdb-5.17.0.dll" target="lib\native" />
-  </files>
 </package>
